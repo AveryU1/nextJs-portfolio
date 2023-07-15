@@ -93,7 +93,7 @@ const Contact = () => {
                             />
                             {errors.Name?.type === "required" && (
                                 <p style={{ color: "#6b7688" }}>
-                                    The name's field is required
+                                    The name&#39;s field is required
                                 </p>
                             )}
                         </motion.div>

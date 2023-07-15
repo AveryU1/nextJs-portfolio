@@ -33,13 +33,14 @@ const About = () => {
                     <article>
                         <h3>About me</h3>
                         <p>
-                            Since I was a kid I liked computers but it wasn't
-                            until I was 20 that I decided I wanted to be a
-                            software developer. I would like a job where I gain
-                            experience and have a good work environment to
+                            Since I was a kid I liked computers but it
+                            wasn&#39;t until I was 20 that I decided I wanted to
+                            be a software developer. I would like a job where I
+                            gain experience and have a good work environment to
                             better develop my skills. I love solving problems
-                            and I'm good at working in a team. In my spare time
-                            I like to play videogames, watch movies and anime :)
+                            and I&#39;m good at working in a team. In my spare
+                            time I like to play videogames, watch movies and
+                            anime
                         </p>
                         <div className="app__about-curriculum">
                             <a
