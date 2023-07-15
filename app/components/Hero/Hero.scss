@@ -1,0 +1,106 @@
+.app__hero {
+    padding: 6rem 1rem 2rem;
+    height: 100%;
+    @media screen and (min-width: 900px) {
+        padding: 0;
+    }
+    .app__hero-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .app__hero__info-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div {
+                h1 {
+                    color: var(--lightGray-color);
+                    @media screen and (min-width: 768px) {
+                        font-size: 2.5rem;
+                    }
+                    span {
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+        .app__hero__typing-container {
+            margin: 2rem 0;
+            width: 20rem;
+            right: 0;
+            padding: 1rem;
+            border: 5px solid #03a9f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width: 300px) {
+                width: 16rem;
+            }
+            @media screen and (min-width: 768px) {
+                width: 22rem;
+            }
+
+            .app__hero-typing {
+                display: block;
+                font-size: 1.2rem;
+                font-family: monospace;
+                color: var(--lightGray-color);
+                white-space: nowrap;
+                border-right: 4px solid;
+                width: 22ch;
+                animation: typing 3s steps(22),
+                    blink 0.5s infinite step-end alternate;
+                overflow: hidden;
+
+                @media screen and (max-width: 300px) {
+                    font-size: 1rem;
+                }
+                @media screen and (min-width: 768px) {
+                    font-size: 1.5rem;
+                }
+            }
+            @keyframes typing {
+                from {
+                    width: 0;
+                }
+            }
+            @keyframes blink {
+                50% {
+                    border-color: transparent;
+                }
+            }
+        }
+        .app__hero-profile {
+            text-align: center;
+            @media screen and (min-width: 500px) {
+                width: 20rem;
+            }
+            @media screen and (min-width: 768px) {
+                text-align: center;
+                width: 40%;
+            }
+        }
+
+        img {
+            @media screen and (min-width: 768px) {
+                width: 20rem;
+                height: 20rem;
+            }
+            @media screen and (min-width: 1024px) {
+                width: 25rem;
+                height: 25rem;
+            }
+            @media screen and (min-width: 1024px) {
+                width: 30rem;
+                height: 30rem;
+            }
+        }
+    }
+}
